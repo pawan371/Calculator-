@@ -45,3 +45,17 @@ button {
 
 
 
+/*default (light mode)*/
+body {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+
+/* dark mode class*/
+.dark {
+    background-color: black;
+    color: white;
+    
+}

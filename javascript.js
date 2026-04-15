@@ -44,3 +44,23 @@ buttons.forEach(button => {
     }
   });
 });
+
+
+function toggleMode(){
+    document.body/*pura page */.classList.toggle("dark");
+
+// check karo dark mode hai ya nhi 
+if(document.body.classList.contains("dark")){
+    localStorage.setItem("theme","dark");
+}else{
+    localStorage.setItem("theme","light");
+
+}
+}
+
+// page load par check
+window.onload=function(){
+    if(localStorage.getItem("theme")=== "dark"){
+        document.body.classList.add("dark");
+    }// yha pahlekya save tha? (dark ya light)
+};
